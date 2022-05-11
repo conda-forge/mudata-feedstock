@@ -36,7 +36,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/pmbio/mudata
+  home: https://github.com/scverse/mudata
   summary: Multimodal omics analysis framework
   license: BSD-3-Clause
   license_file: LICENSE

@@ -1,7 +1,7 @@
 About mudata
 ============
 
-Home: https://github.com/pmbio/mudata
+Home: https://github.com/scverse/mudata
 
 Package license: BSD-3-Clause
 

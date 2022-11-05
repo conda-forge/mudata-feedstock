@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mudata-feedstock/blob/main/LICENSE.txt)
 
-Summary: Multimodal omics analysis framework
+Summary: Multimodal annotated datasets
 
 Current build status
 ====================

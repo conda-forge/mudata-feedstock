@@ -19,6 +19,8 @@ requirements:
     - flit-core
     - pip
     - python >=3.9
+    - hatchling
+    - hatch-vcs
   run:
     - anndata >=0.10.8
     - h5py

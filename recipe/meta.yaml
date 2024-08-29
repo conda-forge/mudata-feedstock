@@ -1,5 +1,5 @@
 {% set name = "mudata" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
-  sha256: 57acfd7648337840b3dc3d12a561b5364cef24fe79d5f4b539b916a7c0e029a7
+  sha256: 452f166861539c118e99c432725fc6ced6064d96d333413a306cb5b04992b963
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 

@@ -10,7 +10,7 @@ source:
   sha256: 57acfd7648337840b3dc3d12a561b5364cef24fe79d5f4b539b916a7c0e029a7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,7 +18,7 @@ requirements:
   host:
     - flit-core
     - pip
-    - python >=3.9
+    - python >=3.10
     - hatchling
     - hatch-vcs
   run:
@@ -26,7 +26,7 @@ requirements:
     - h5py
     - numpy
     - pandas
-    - python >=3.9
+    - python >=3.10
 
 test:
   imports:

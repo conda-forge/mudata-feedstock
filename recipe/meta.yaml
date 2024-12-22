@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "mudata" %}
 {% set version = "0.3.1" %}
 
@@ -6,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
   sha256: 452f166861539c118e99c432725fc6ced6064d96d333413a306cb5b04992b963
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -18,7 +19,7 @@ requirements:
   host:
     - flit-core
     - pip
-    - python >=3.10
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
   run:
@@ -26,7 +27,7 @@ requirements:
     - h5py
     - numpy
     - pandas
-    - python >=3.10
+    - python >={{ python_min }}
 
 test:
   imports:
@@ -35,6 +36,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/scverse/mudata

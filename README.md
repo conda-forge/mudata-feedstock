@@ -13,11 +13,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=15289&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/mudata-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -147,5 +146,6 @@ Feedstock Maintainers
 * [@grst](https://github.com/grst/)
 * [@gtca](https://github.com/gtca/)
 * [@ilan-gold](https://github.com/ilan-gold/)
+* [@ilia-kats](https://github.com/ilia-kats/)
 * [@ivirshup](https://github.com/ivirshup/)
 

@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "mudata" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
-  sha256: 20e518b8acbca8aa44f4318b5695ad1fae54010ac9f5899c82506b056cc2fdf1
+  sha256: 27c3fe57baaab32b3d02a19f436b9d441c95fcba5e2191f1d6e8527e1804def1
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - hatch-vcs
   run:
     - scipy
-    - scverse-misc >=0.0.3
+    - scverse-misc >=0.0.3,<=0.1.1
     - anndata >=0.10.8
     - h5py
     - numpy

@@ -1,14 +1,14 @@
 {% set python_min = "3.10" %}
 {% set name = "mudata" %}
-{% set version = "0.3.10" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
-  sha256: 2765fc4b732ba61c849c3d0af4046a2069c05296c8ac70f7f235385a080be248
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mudata-{{ version }}.tar.gz
+  sha256: 24e9d7638dc4bc8305370ce89f514217ec8ffa8188126327dde9a17ef6687fdf
 
 build:
   number: 0
@@ -23,8 +23,8 @@ requirements:
     - hatch-vcs
   run:
     - scipy
-    - scverse-misc >=0.0.3,<=0.1.1
-    - anndata >=0.10.8
+    - scverse-misc >=0.1.1
+    - anndata >=0.11
     - h5py
     - numpy
     - pandas >=1.4
